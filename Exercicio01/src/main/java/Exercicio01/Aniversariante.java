@@ -4,7 +4,14 @@ public class Aniversariante {
 	private String nome;
 	private DataAniversario dataAniversario;
 
-	//gets e sets...
+	public Aniversariante(String nome, DataAniversario dataAniversario) {
+		this.nome = nome;
+		this.dataAniversario = dataAniversario;
+	}
+
+	public Aniversariante(String nome, int dia, int mes) {
+		this(nome, new DataAniversario(dia, mes));
+	}
 
 
 	public String getNome() {
@@ -23,17 +30,15 @@ public class Aniversariante {
 		this.dataAniversario = dataAniversario;
 	}
 
-
-	public boolean equals(Aniversariante aniversariante) {
-		if (this == aniversariante){
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj){
 			return true;
 		}
-		if (aniversariante == null || getClass() !=  aniversariante.getClass()){
+		if (obj == null || getClass() !=  obj.getClass()){
 			return false;
 		}
 
-		Aniversariante outro = (Aniversariante) aniversariante;
-
-		return nome.equals(outro.nome) && dataAniversario.equals(outro.dataAniversario);
+        return nome.equals(((Aniversariante) obj).nome) && dataAniversario.equals(((Aniversariante) obj).dataAniversario);
 	}
 }

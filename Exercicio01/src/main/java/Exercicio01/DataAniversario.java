@@ -6,7 +6,7 @@ public class DataAniversario {
 	private int mes;
 
 	
-	public void DataAniversario(int dia, int mes){
+	public DataAniversario(int dia, int mes){
 		this.dia = dia;
 		this.mes = mes;
 		}
@@ -14,6 +14,7 @@ public class DataAniversario {
 	// gets e sets…
 	
 	
+	@Override
 	public boolean equals(Object outraData){
 		if (outraData instanceof DataAniversario){
 			DataAniversario outraDataAniversario = (DataAniversario) outraData;
