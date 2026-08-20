@@ -1,0 +1,16 @@
+/target/
+# Arquivos compilados
+*.class
+
+# Saída de build do Eclipse
+/bin/
+**/bin/
+
+# Saída de build do Maven
+/target/
+**/target/
+
+# Configuração local do IntelliJ
+.idea/
+*.iml
+out/
