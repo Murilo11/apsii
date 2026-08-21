@@ -1,16 +1,27 @@
-/target/
-# Arquivos compilados
+# Compilados
 *.class
 
-# Saída de build do Eclipse
-/bin/
-**/bin/
-
-# Saída de build do Maven
-/target/
+# Build - Maven
+target/
 **/target/
 
-# Configuração local do IntelliJ
+# Build - Eclipse
+bin/
+**/bin/
+
+# IntelliJ IDEA
 .idea/
 *.iml
+*.ipr
+*.iws
 out/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
