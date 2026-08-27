@@ -1,6 +1,6 @@
 package org.example;
 
-public class Produto {
+public abstract class Produto {
     public String nome;
     public double preco;
 
@@ -26,4 +26,6 @@ public class Produto {
     public void setPreco(double preco) {
         this.preco = preco;
     }
+
+    public abstract String exibirInformacoes();
 }

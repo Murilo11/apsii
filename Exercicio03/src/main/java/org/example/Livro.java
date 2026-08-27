@@ -18,4 +18,8 @@ public class Livro extends Produto {
     public void setAutor(String autor) {
         this.autor = autor;
     }
+    @Override
+    public String exibirInformacoes() {
+        return "Livro: " + getNome() + " | Autor: " + autor + " | Valor: " + getPreco();
+    }
 }

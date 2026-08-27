@@ -17,5 +17,9 @@ public class CD extends Produto{
         this.numFaixas = numFaixas;
     }
 
+    @Override
+    public String exibirInformacoes() {
+        return "Informações do CD: " + "\nNome: " + getNome() + "\nPreço: " + getPreco() + "\nNúmeros de faixa: " + getNumFaixas();
+    }
 
 }

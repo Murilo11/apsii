@@ -13,6 +13,8 @@ public class Main {
         System.out.println("Digite o nome do Livro");
         String nomeLivro = sc.nextLine();
 
+        sc.nextLine();
+
         System.out.println("Digite o nome do CD");
         String nomeCD = sc.nextLine();
         System.out.println("Digite o valor do CD");
@@ -20,8 +22,10 @@ public class Main {
         System.out.println("Digite o numero de faixas");
         int numeroFaixas = sc.nextInt();
 
-        //Livro book1 = new Livro("Odisseia",120,"Homero");
-        //CD CD1 = new CD("Maid of Honour",50,18);
+        Livro book1 = new Livro(nomeLivro,valorLivro,nomeAutor);
+        CD CD1 = new CD(nomeCD,valorCD,numeroFaixas);
+
+        System.out.println(CD1.exibirInformacoes());
 
 
 
